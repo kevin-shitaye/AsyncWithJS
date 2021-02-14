@@ -8,6 +8,7 @@
     <!-- Semantic CDN -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
@@ -39,13 +40,19 @@
 
 
         <!-- Timer API -->
-
-        <div class="ui message">
-            <div class="header">
-                Current Time
+        <div class="clock">
+            <div id="center_dot"></div>
+            <div class="hour">
+                <div class="hr" id="hr"></div>
             </div>
-            <p id="timerDemo">TIme Will Load Here ...</p>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
         </div>
+        
 
         <!-- All Blogs  -->
         <div class="ui top attached segment">

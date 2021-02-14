@@ -2,11 +2,18 @@
 const postDiv3 = document.getElementById('thePosts');
 const spinner_ui = document.getElementById('spinner_ui')
 postDiv3.style.display = 'none';
+const h = document.querySelector('#hr')
+const m = document.querySelector('#mn')
+const s = document.querySelector('#sc')
+const degree = 6;
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
     loadDataNew();
     spinner()
+
+
+
 });
 
 
@@ -107,3 +114,13 @@ function spinner() {
         postDiv3.style.display = 'block';
     }, 2000);
 }
+setInterval(() => {
+    let day = new Date();
+    let hour = day.getHours() * 30;
+    let minute = day.getMinutes() * degree;
+    let sec = day.getSeconds() * degree;
+
+    h.style.transform = `rotateZ(${hour+(minute/12)}deg)`;
+    m.style.transform = `rotateZ(${minute}deg)`;
+    s.style.transform = `rotateZ(${sec}deg)`;
+}, 1000);
