@@ -10,7 +10,7 @@ const degree = 6;
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
     loadDataNew();
-    spinner()
+    
 
 
 
@@ -108,12 +108,12 @@ function loadDataNew() {
         });
 
 }
-function spinner() {
+
     setTimeout(() => {
         spinner_ui.style.display = 'none';
         postDiv3.style.display = 'block';
     }, 2000);
-}
+
 setInterval(() => {
     let day = new Date();
     let hour = day.getHours() * 30;

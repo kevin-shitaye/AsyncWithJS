@@ -15,7 +15,7 @@
     background-image: url("../img/clock.jpg");
     border-radius: 50%;
     border: solid 10px rgb(242, 247, 0);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -85,3 +85,9 @@
     z-index: 12;
     border-radius: 5px 5px 0 0;
 }
+
+
+
+/* css for the gallery.html page */
+img {
+    height: 101vh !important;
